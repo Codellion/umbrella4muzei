@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="log4j-over-slf4j-1.7.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/umbrellaMuzei/build/libs/log4j-over-slf4j-1.7.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,33 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.1'
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    signingConfigs {
+        codellion {
+            keyAlias 'codellionkey'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.google.android.apps.muzei:muzei-api:+'
+    compile 'com.squareup.retrofit:retrofit:1.4.1'
+    compile 'org.slf4j:slf4j-android:1.6.1-RC1'
+    compile files('external libs/flickr-2.5.jar')
+    compile files('external libs/log4j-over-slf4j-1.7.6.jar')
+    compile files('external libs/scribe-1.3.5.jar')
+}
